@@ -1,0 +1,9 @@
+package com.blindbank.Banking.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.blindbank.Banco.model.Conta;
+
+public interface ContaDao extends CrudRepository<Conta,Integer> {
+
+}

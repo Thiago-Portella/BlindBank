@@ -1,0 +1,5 @@
+package com.blindbank.Banking.model;
+
+public class Conta {
+
+}

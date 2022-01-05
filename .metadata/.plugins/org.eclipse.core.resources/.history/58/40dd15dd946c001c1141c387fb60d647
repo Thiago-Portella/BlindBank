@@ -1,0 +1,5 @@
+package com.blindbank.Banking.dao;
+
+public interface ContaDao {
+
+}
