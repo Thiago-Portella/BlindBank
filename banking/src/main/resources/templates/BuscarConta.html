@@ -4,11 +4,20 @@
 t	<meta charset="UTF-8">	
 	<title>Buscar conta</title>
 	<script src="javascript/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="estilo.css" media="screen">
+
 </head>
 <body>
-	<h1>Itaú-unibanco</h1><br>
-	<p> preencha os campos a baixo para ver sua conta. </p> <br>
-	<form name="encontrar conta">
+
+<div>
+                <h1 id="titulo">  Itaú-Unibanco</h1>
+				<p id="subtitulo"> Preencha os campos a baixo para ver sua conta. </p>
+                <br>
+        </div>
+
+				
+       <form action="" method="get" name="encontrarConta">
+ 
 		<label>número da conta</label><br>
 		<input type="texte" id="numero" required placeholder="Informe o número da conta"><br>
 		<button type="button" onclick="pesquisarPorNumero();">Pesquisar.</button>
