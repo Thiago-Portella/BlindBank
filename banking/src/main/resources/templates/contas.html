@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="JavaScriptget.js/"></script>
+    <script src="javascript/script.js"></script>
+<title>BlindBank</title>
+
+</head>
+<style>
+	table {
+	border-collapse: inherit;
+}
+
+td {
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+}
+</style>
+<body>
+	<h1>Itaú-Unibanco</h1>
+	<div align="center" class="container my-2" style= background-color:white>
+		<br>
+		<h2>Lista de Contas</h2>
+		<br />
+		<table border="5" class="table table-striped table-responsive-md">
+
+			<tr>
+				<td>Id</td>
+				<td>Número</td>
+				<td>Agência</td>
+				<td>Tipo</td>
+				<td>Saldo</td>
+				<td>Titular</td>
+				<td>Ações</td>
+			</tr>
+
+			<tr th:each="contas : ${contas}">
+				<td th:text="${contas.id}"></td>
+				<td th:text="${contas.numero}"></td>
+				<td th:text="${contas.agencia}"></td>
+				<td th:text="${contas.tipo}"></td>
+				<td th:text="${contas.saldo}"></td>
+				<td th:text="${contas.titular}"></td>
+				<td>
+					<a th:href="@{/contas/edit/{id}(id=${contas.id})}" class="btn btn-primary">Alterar</a>
+					<a th:href="@{/contas/delete/{id}(id=${contas.id})}" class="btn btn-danger">Excluir</a></td>
+	
+			</tr>
+		</table>
+		<a th:href="@{/contas/add}" class="btn btn-primary btn-sm mb-3">Incluir Conta</a>
+	</div>
+	<a th:href="@{/}" class="btn btn-primary btn-sm mb-3">Retornar para a tela inicial</a>
+</body>
+</html>

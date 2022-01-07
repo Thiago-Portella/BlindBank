@@ -1,28 +1,60 @@
-<DOCTYPE HTML>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-t	<meta charset="UTF-8">	
-	<title>Buscar conta</title>
-	<script src="javascript/script.js"></script>
-	<link rel="stylesheet" type="text/css" href="estilo.css" media="screen">
+<meta charset="UTF-8">
+<title>Buscar Conta</title>
 
 </head>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+	crossorigin="anonymous">
+
+<link rel="stylesheet"
+	href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="JavaScriptget.js/"></script>
+<script src="javascript/script.js"></script>
+<style type="text/css">
+table {
+	border-collapse: inherit;
+}
+
+td {
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+}
+</style>
 <body>
-
-<div>
-                <h1 id="titulo">  Itaú-Unibanco</h1>
-				<p id="subtitulo"> Preencha os campos a baixo para ver sua conta. </p>
-                <br>
-        </div>
-
-				
-       <form action="" method="get" name="encontrarConta">
- 
-		<label>número da conta</label><br>
-		<input type="texte" id="numero" required placeholder="Informe o número da conta"><br>
-		<button type="button" onclick="pesquisarPorNumero();">Pesquisar.</button>
-	</form><br>
-	<a href="index.html">Voltar para a página inicial.</a>
+	<h1>Itaú-Unibanco</h1>
+	<br>
+	<p>Preencha os campos a baixo para ver sua conta.</p>
+	<br>
+	<form name="encontrar conta">
+		<label>Nome do titular</label><br> <input type="texte" required
+			placeholder="Informe o titular da conta"><br> <label>número
+			da conta</label><br> <input type="texte" required
+			placeholder="Informe o número da conta"><br>
+		<button type="submit">continuar</button>
+		<br>
+	</form>
+	<br>
+	<!--  
+	<script>
+	function validaTitular(){
+		
+	}
 	
+	function valida numero(){
+		
+	}
+	</script>
+	-->
+
+	<a th:href="@{/}" class="btn btn-primary btn-sm mb-3">Retornar para
+		a tela inicial</a>
+
 </body>
 </html>

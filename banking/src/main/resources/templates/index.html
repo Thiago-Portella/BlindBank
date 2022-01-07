@@ -1,18 +1,49 @@
 <!DOCTYPE html>
-<html lang="ptbr">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="estilo.css" media="screen">
-
-</head>
-<body>
-	<title>Página Inicial BlindBank</title>
-	
-	<h1>Itaú-Unibanco</h1><br>
-	<a href="http://localhost:8080/contas">Clique aqui para ter acesso a todas as contas.</a><br>
-	<p> <span id="ou">ou </span> <br>
-	<a href="BuscarConta.html">Clique aqui para buscar por uma conta utilizando o número.</a></p>
-</body>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="JavaScriptget.js/"></script>
+    <script src="javascript/script.js"></script>
+    <title>BlindBank</title>
+  </head>
+  <body>
+    <h1>Itaú-Unibanco</h1>
+    <div class="container my-2">
+      <h2>Seja Bem vindo!</h2>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h4 class="my-0 fw-normal">BlindBank</h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Contas</li>
+              </ul>
+              <a class="w-100 btn btn-lg btn-primary" th:href="@{/contas}"
+                >Acessar Contas</a>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Buscar Contas</li>
+              </ul>
+              <a
+                href="BuscarConta.html"
+                class="w-100 btn btn-lg btn-primary"
+                th:href="@{/BuscarConta}"
+                >Busca de Contas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
