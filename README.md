@@ -29,10 +29,16 @@ Usamos algumas linguagens/tecnologias para a criação do projeto
 Dependencias 
 
 Thymeleaf
+
 Spring Web
+
 Spring Boot DevTools
+
 Spring Data JPA
+
 Mysql Driver
+
+Hibernate
 
 Banco de Dados MySQL - Xammp - PhpMyAdmin - WorkBench - 
 
