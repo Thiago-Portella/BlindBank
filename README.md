@@ -1,7 +1,7 @@
 Equipe BlindBank
 
-Sidney
-Vinicius
+Sidney Araujo
+Vinicius 
 Thiago Portella
 Yves Oliveira
 Willian Almeida
