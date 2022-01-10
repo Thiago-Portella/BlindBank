@@ -27,7 +27,7 @@ Spring Boot DevTools
 Spring Data JPA
 Mysql Driver
 
-Banco de Dados MySQL
+Banco de Dados MySQL - Xammp - PhpMyAdmin - WorkBench - 
 
 HTML
 Bootstrap
