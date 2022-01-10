@@ -1,7 +1,7 @@
 Equipe BlindBank
 
 Sidney Araujo
-Vinicius 
+Vinicius Costa
 Thiago Portella
 Yves Oliveira
 Willian Almeida
