@@ -8,7 +8,8 @@ Willian Almeida
 
 Este projeto foi feito com base no material feito em vídeo aula pelo Professor Isidro e nela foi feita o cadastro de algumas contas bancarias.
 
-Objetivos
+Objetivo
+
 Construir uma API Spring BOOT que possua 1 endpoint principal:
 
 Recuperação dos detalhes de uma conta bancária (inclusive os dados do seu titular)
