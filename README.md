@@ -1,10 +1,14 @@
 Equipe BlindBank
 
+Integrantes
+
 Sidney Araujo
 Vinicius Costa
 Thiago Portella
 Yves Oliveira
 Willian Almeida
+
+
 
 Este projeto foi feito com base no material feito em vídeo aula pelo Professor Isidro e nela foi feita o cadastro de algumas contas bancarias.
 
