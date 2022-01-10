@@ -29,6 +29,9 @@ Mysql Driver
 
 Banco de Dados MySQL
 
+HTML
+Bootstrap
+
 Ferramentas
 
 Visual Studio Code - Compilador usado para desenvolver o codigo é uma versão reduzida do ambiente de desenvolvimento oficial da Microsoft. - https://code.visualstudio.com/;
