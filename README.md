@@ -14,7 +14,9 @@ Construir uma API Spring BOOT que possua 1 endpoint principal:
 Recuperação dos detalhes de uma conta bancária (inclusive os dados do seu titular)
 Nesta outra consulta, teremos como resposta os dados de uma conta bancária especifica contendo: numero, agência, tipo de Conta (0 - conta corrente, 1 - poupança), saldo e o titular da conta. 
 
-O projeto foi criado baseado na framework SpringBoot do Java, juntamente com o banco de dados MySQL. Foi as tarefas com o squad e cada um ficou com uma função. 
+O projeto foi criado baseado na framework SpringBoot do Java, juntamente com o banco de dados MySQL. 
+
+Foi feitas as tarefas com o squad e cada um ficou com uma função. 
 
 Usamos algumas linguagens/tecnologias para a criação do projeto
 
